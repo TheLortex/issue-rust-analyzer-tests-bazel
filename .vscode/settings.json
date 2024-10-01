@@ -1,0 +1,6 @@
+{
+    "rust-analyzer.linkedProjects": [
+        "rust-project.json"
+    ],
+    "rust-analyzer.server.path": "/Users/lucas/git/rust-analyzer/target/debug/rust-analyzer"
+}

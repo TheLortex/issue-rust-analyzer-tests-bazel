@@ -1,0 +1,18 @@
+load("@crates//:defs.bzl", "aliases", "all_crate_deps")
+load("@rules_rust//rust:defs.bzl", "rust_library", "rust_test")
+
+rust_library(
+    name = "engine",
+    srcs = ["src/lib.rs"],
+    deps = all_crate_deps(
+        normal = True,
+    ),
+)
+
+rust_test(
+    name = "tests",
+    srcs = ["src/lib.rs"],
+    deps = all_crate_deps(
+        normal = True,
+    ),
+)
